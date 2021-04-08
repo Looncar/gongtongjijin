@@ -1,0 +1,66 @@
+
+.displaymain{
+    height: auto;
+    margin-top: 15px;
+}
+.left{
+    width: 24%;
+    height: auto;
+    float: left;
+    z-index: 2;
+    border: 1px solid #ccc;
+}
+.middle{
+    width: 95%;
+    height: auto;
+    float: left;   
+    margin: 0 1%;
+    z-index: 2;
+    overflow: hidden;  
+}
+.m-top,.m-bottom{
+    z-index: 2;
+}
+.m-top{
+    margin-bottom: 20px;
+}
+.right{
+    width: auto;
+    height: auto;
+    float: left;
+    font-size: 15px;
+    z-index: 2;
+}
+.r-title a{
+    float: right;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.link{
+    height: 100px;
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px 40px;
+    font-size: 14px;
+}
+#ilink{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+#ilink ul>li{
+    float: left;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+}
+#ilink ul{
+    position: absolute;
+    left:0;
+    top: 10px;
+}
+

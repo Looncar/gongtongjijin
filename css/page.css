@@ -1,0 +1,75 @@
+.displaymain{
+    margin: 15px 0 40px 0;
+}
+.clearfix:after,.clearfix:before{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.none{
+    display: none;
+}
+.left{
+    width: 24%;
+    float: left;
+    z-index: 2;
+}
+.aside ul>li{
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 2px;
+    margin:  10px 15px;
+    border-radius: 2px;
+    font-weight: 555;
+    position: relative;
+    background-image: linear-gradient(#FEFEFE,#F1F1F1);
+}
+.aside a{
+    color: #B69C44;
+}
+.dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #B69C44;
+    margin-right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    position: absolute;
+}
+.right{
+    width: 74%;
+    float: right;
+}
+.right1{
+    float: right;
+}
+.breadNav{
+    margin: 10px 0;
+    font-size: 13px;
+}
+.card{
+    border: 1px solid #ccc;
+}
+.r-title{
+    background-image: linear-gradient(#F6EFBC,#FADF72,#F6EFBC);
+}
+.right .content{
+    padding: 0 20px 20px 20px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.center{
+    text-align: center;
+}
+.content p{
+    padding-top: 20px;
+}
+.date{
+    position: absolute;
+    right: 20px;
+    top: 60px;
+}
