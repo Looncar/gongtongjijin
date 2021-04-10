@@ -21,7 +21,7 @@ jQuery(document).ready(function () {
                 result.forEach(function(currentValue, index, arr){
                     result[index].update_at = formateDate(result[index].update_at)
                     console.log(result[index].update_at)
-                })
+                }) 
                 var data = {result: []}
                 for(var i=0, len=result.length; i<len; i++){
                     result[i].a = "<a href='page.html?type_id=" + type + "&&_id=" + result[i]._id + "'>" + result[i].title + "</a>"
