@@ -19,6 +19,10 @@ jQuery(document).ready(function () {
             success:function(json){
                 console.log(json)
                 result = json.data
+                result.forEach(function(currentValue, index, arr){
+                    result[index].update_at = formateDate(result[index].update_at)
+                    console.log(result[index].update_at)
+                })
                 var data = {result: []}
                 for(var i=0, len=result.length; i<len; i++){
                     result[i].a = "<a href='page.html?type_id=" + type + "&&_id=" + result[i]._id + "'>" + result[i].title + "</a>"
@@ -54,6 +58,10 @@ jQuery(document).ready(function () {
                     list.result[0].typeTitle = "旗下产品"
                 }
                 console.log(list)
+                list.result.forEach(function(currentValue, index, arr){
+                    list.result[index].update_at = formateDate(list.result[index].update_at)
+                    console.log(list)
+                })
                 var html = template('tmplt', list);
                 $('#article').html(html);
             }
@@ -66,4 +74,21 @@ jQuery(document).ready(function () {
             return unescape(r[2]);}
         return null; //返回参数值
     }
+    function formateDate(date) {
+        var d = new Date(date);
+        return (
+          d.getFullYear().toString() +
+          "年" +
+          (d.getMonth() + 1).toString() +
+          "月" +
+          d.getDate().toString() +
+          "日" +
+          d.getHours().toString() +
+          "时" +
+          d.getMinutes().toString() +
+          "分" +
+          d.getSeconds().toString() +
+          "秒"
+        );
+      }
 })
