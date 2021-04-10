@@ -30,7 +30,7 @@ jQuery(document).ready(function () {
                 }
                 var tplist = template('tplist', data);
                 $('#list').html(tplist);
-            }
+            } 
         })
     } else {
         $(".report").toggleClass("none")
